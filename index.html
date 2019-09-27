@@ -2,6 +2,15 @@
 <html>
 <head>
   <title>Leemyu's Record</title>
+  <style>
+  .main {text-decoration: none; color: black; font-family:apple SD 산돌고딕 Neo; font-weight: bold; font-size: 50px;}
+  #topmenu {height: 60px; width: 3000px;}
+  #topmenu ul li {list-style: none; color: white; background-color: #2d2d2d; float: left;
+    line-height: 30px; vertical-align: middle; text-align: center;}
+  #topmenu .category {text-decoration: none; color: white; display: block; width: 265px;
+    font-size: 12px; font-weight: bold; font-family: apple SD 산돌고딕 Neo;}
+  #topmenu .category:hover {color: pink; background-color: #4d4d4d}
+  </style>
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148822011-1"></script>
@@ -15,27 +24,23 @@
 
 </head>
 <body>
-<h1><a href="index.html">Leemyu's Daily</a></h1><br>
+<h1 align="center"><a href="index.html" class="main">Leemyu's Daily</a></h1><br>
+<hr/>
+<nav id="topmenu">
 <ul>
-<li><a href="1.html"><<strong><u>Diary</u></strong>></a></li>
-일상
+<li><a href="1.html" class="category"><strong>Diary</strong></a></li>
+<li>|</li>
+<li><a href="2.html" class="category"><strong>To Do List</strong></a></li>
+<li>|</li>
+<li><a href="3.html" class="category"><strong>Review</strong></a></li>
+<li>|</li>
+<li><a href="4.html" class="category"><strong>Wish List</strong></a></li>
+<li>|</li>
+<li><a href="5.html" class="category"><strong>Memo</strong></a></li>
 </ul>
-<ul>
-<li><a href="2.html"><<strong><u>To Do List</u></strong>></a></li>
-할 일
-</ul>
-<ul>
-<li><a href="3.html"><<strong><u>Review</u></strong>></a></li>
+</nav>
 책, 드라마, 영화, 연극, 음식, 화장품, 제품
-</ul>
-<ul>
-<li><a href="4.html"><<strong><u>Wish List</u></strong>></a></li>
-찜한 목록
-</ul>
-<ul>
-<li><a href="5.html"><<strong><u>Memo</u></strong>></a></li>
-끄적끄적
-</ul>
+
 <div id="disqus_thread"></div>
 <script>
 
@@ -56,7 +61,7 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
